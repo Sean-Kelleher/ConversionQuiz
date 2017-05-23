@@ -85,7 +85,7 @@ public class GUI extends JPanel implements ActionListener
 	{
 		if(e.getSource()==saveButton)
 		{		
-			type1 = (String) combo1.getSelectedItem();			
+			type1 = (String) combo1.getSelectedItem();	
 			type2 = (String) combo2.getSelectedItem();
 			int questions = (int) spinner.getValue();
 			fd.setDirectory("C:\\");

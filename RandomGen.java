@@ -24,6 +24,7 @@ public class RandomGen
 	{
 		String res="";
 		res=randomBinary();
+		//loop prevents the output being 0
 		while(res.equals("0"))
 			res=randomBinary();
 		return res;

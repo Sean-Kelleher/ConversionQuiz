@@ -12,6 +12,7 @@ public class Out
 	private String type2="";
 	public void make(String t1, String t2,int questions, String name) throws FileNotFoundException
 	{
+		//Create the filename - if it does not have .txt, add .txt
 		String fName=name;
 		if(!name.contains(".txt"))
 			fName+=".txt";
@@ -70,7 +71,7 @@ public class Out
 	
 	private String convert(String in)
 	{
-		String out = "awefg";
+		String out = "";
 		
 		if(type1.equals(type2))
 		{

@@ -24,7 +24,7 @@ public class Converters extends Stack
 
 	public String hexToBinary(String num)
 	{
-		String[] splitted = num.split("");
+		String[] splitted = num.split("(?!^)");
 		String res = "";
 		
 		for(String s : splitted)
@@ -211,7 +211,7 @@ public class Converters extends Stack
 		int dec=0;
 		int exponent=num.length()-1;
 		int[] intArr = new int[num.length()];
-		String[] splitted = num.split("");
+		String[] splitted = num.split("(?!^)");
 		for(int i=0;i<splitted.length;i++)
 		{
 			try{
@@ -248,7 +248,7 @@ public class Converters extends Stack
 	private int[] makeArr(int num)
 	{
 		String numString = Integer.toString(num);		
-		String[] splitted = numString.split("");
+		String[] splitted = numString.split("(?!^)");
 		int[] numArr=new int[splitted.length];
 		for(int i=0;i<splitted.length;i++)
 			numArr[i]=Integer.parseInt(splitted[i]);		
@@ -315,8 +315,8 @@ public class Converters extends Stack
 	//turn a long into an array
 	private int[] makeArr(long num)
 	{
-		String numString = Long.toString(num);		
-		String[] splitted = numString.split("");
+		String numString = Long.toString(num);
+		String[] splitted = numString.split("(?!^)");
 		int[] numArr=new int[splitted.length];
 		for(int i=0;i<splitted.length;i++)		
 			numArr[i]=Integer.parseInt(splitted[i]);		
